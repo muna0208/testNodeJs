@@ -1,0 +1,13 @@
+
+    node_modules파일을
+    - npm 실행
+        package.json 파일이 생성
+        dependencies에 npm lib 목록 생성됨
+
+    - node install express --save
+
+    - git에서 배포받고 npm install로 dependencies 에 있는 lib를 설치
+    
+    - package.json에 scripts 설정
+        "start": "node index.js" 설정 후 npm start 실행
+

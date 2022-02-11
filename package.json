@@ -1,0 +1,30 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.16.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "mocha": "^9.2.0",
+    "should": "^13.2.3",
+    "supertest": "^6.2.2"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha api/user/user.spec.js",
+    "start": "node bin/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "npm"
+  },
+  "description": ""
+}

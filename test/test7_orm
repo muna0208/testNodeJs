@@ -1,0 +1,22 @@
+- 데이터베이스를 객체로 추상화해 논것을 ORM(Object Relational Mapping)이라고 한다.
+- 쿼리를 직접 작성하는 대신 ORM의 메소드로 데이터 관리할 수 있는 것이 장잠이다.
+- 노드에서 SQL ORM은 시쿼라이져(Sequelize)가 있다
+
+적용 예)
+- insert users ('name') value ('alice');
+    User.create({name: 'alice'})
+
+- select * from users;
+    User.findAll()
+
+- update users set name = 'bec' where id=1;
+    User.update({name:'bec'}, {where: {id:1}});
+
+- delete from users where id=1;
+    User.destroy({where: {id:1}});
+
+User은 모델이다.
+- 데이터베이스 테이블을 ORM으로 추상화한것을 모델이라고 한다.
+- 우리가 사용할 유저 모델을 만들어 보자.
+    Sequelize.define(): 모델 정의
+    Sequelize.sync(): 데이터베이스 연동
