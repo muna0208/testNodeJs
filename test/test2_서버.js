@@ -3,7 +3,11 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 
-// 애로우 함수 (req, res) => {} == function(req,res) {}
+/*
+    애로우 함수 
+    (req, res) => {} 
+    function(req,res) {}
+*/
 const server = http.createServer((req, res) => {
 
     console.log(req.url);
